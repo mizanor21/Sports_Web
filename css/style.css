@@ -20,9 +20,8 @@ body {
 .header_area img {
     width: 600px;
     height: 650px;
-    left: 801px;
-    top: 83px;
     margin-top: 30px;
+    padding-bottom: 0;
 }
 
 .header_content {
@@ -60,3 +59,40 @@ body {
 }
 
 /* header area end  */
+/* --------------------
+    blogs area start  
+----------------------*/
+.blogs {
+    width: 350px;
+    height: 250px;
+    margin: 0px 150px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+
+.blogs button {
+    text-decoration: none;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 10px;
+    padding: 16px 25px;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    width: 70%;
+    margin-left: 52px;
+    margin-top: 15px;
+    border: none;
+}
+
+#blog_item {
+    color: #ffffff;
+    background-color: #DD0000;
+}
+
+/* --------------------
+    blogs area end  
+----------------------*/
