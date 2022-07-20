@@ -18,7 +18,7 @@ body {
 }
 
 .header_area img {
-    width: 581px;
+    width: 600px;
     height: 650px;
     left: 801px;
     top: 83px;
@@ -50,7 +50,13 @@ body {
     color: #ffffff;
     background: #DD0000;
     border-radius: 5px;
-    padding: 15px 25px;
+    padding: 16px 25px;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
 }
 
 /* header area end  */
