@@ -1,0 +1,56 @@
+body {
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header area start  */
+.header_area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    background-color: black;
+    /* padding: 100px; */
+    margin: 60px 150px;
+    border-radius: 30px;
+}
+
+.header_area img {
+    width: 581px;
+    height: 650px;
+    left: 801px;
+    top: 83px;
+    margin-top: 30px;
+}
+
+.header_content {
+    padding: 100px;
+    padding-right: 0px;
+}
+
+.header_content h1 {
+    font-size: 4vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header_content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 500px;
+    padding-bottom: 30px;
+    /* Weight 400 Size 16px Line height 26px */
+}
+
+.header_content a {
+    text-decoration: none;
+    color: #ffffff;
+    background: #DD0000;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+
+/* header area end  */
