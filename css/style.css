@@ -12,7 +12,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     color: white;
     background-color: black;
-    /* padding: 100px; */
     margin: 60px 150px;
     border-radius: 30px;
 }
@@ -41,7 +40,6 @@ body {
     line-height: 26px;
     width: 500px;
     padding-bottom: 30px;
-    /* Weight 400 Size 16px Line height 26px */
 }
 
 .header_content a {
@@ -62,17 +60,26 @@ body {
 /* --------------------
     blogs area start  
 ----------------------*/
-.blogs {
+.blogs_area {
+    display: flex;
+    margin-left: 0px;
+    margin-right: 150px;
+    margin-bottom: 140px;
+    margin-top: 150px;
+}
+
+.sidebar {
     width: 350px;
     height: 250px;
     margin: 0px 150px;
+    margin-right: 0px;
     background-color: #000000;
     border-radius: 10px;
     padding-top: 30px;
 }
 
 
-.blogs button {
+.sidebar button {
     text-decoration: none;
     background-color: #ffffff;
     display: block;
@@ -88,11 +95,92 @@ body {
     border: none;
 }
 
-#blog_item {
+
+
+#blog_btn {
     color: #ffffff;
     background-color: #DD0000;
 }
 
+.blogss {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blogss .blog_item {
+    width: 385px;
+    height: 400px;
+    border: 1px solid rgb(224, 223, 223);
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.blogss .blog_item img {
+    width: 385px;
+}
+
+.blogss .blog_item .blog_content {
+    padding: 15px;
+}
+
+.blogss .blog_item .blog_content h4 {
+    text-align: center;
+    width: 70px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.blogss .blog_item .blog_content p {
+    color: gray;
+    font-size: 18px;
+}
+
+
 /* --------------------
     blogs area end  
+----------------------*/
+/* --------------------
+    footer area start  
+----------------------*/
+footer {
+    background-color: #000000;
+}
+
+.goal {
+    /* margin-left: 100px; */
+    /* width: 70%; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-bottom: 1px solid rgb(92, 91, 91);
+}
+
+.footer_content {
+    margin-left: 400px;
+    margin-right: 400px;
+    display: flex;
+    color: rgb(177, 175, 175);
+}
+
+.footer_content p {
+    font-size: 18px;
+    padding: 2vw;
+    padding-bottom: 100px;
+
+}
+
+/* --------------------
+    footer area end  
 ----------------------*/
