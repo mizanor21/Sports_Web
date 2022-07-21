@@ -8,27 +8,32 @@ body {
 
 /* header area start  */
 .header_area {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     color: white;
     background-color: black;
     margin: 60px 150px;
     border-radius: 30px;
 }
 
-.header_area img {
-    width: 600px;
-    height: 650px;
-    margin-top: 30px;
-    padding-bottom: 0;
-}
-
-.header_content {
+.header_area .header_content {
+    width: 50%;
     padding: 100px;
     padding-right: 0px;
 }
 
-.header_content h1 {
+.header_area .banner {
+    width: 50%;
+}
+
+.header_area img {
+    width: 90%;
+    margin-top: 30px;
+    padding-bottom: 0;
+}
+
+
+
+.header_area .header_content h1 {
     font-size: 4vw;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -38,7 +43,6 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    width: 500px;
     padding-bottom: 30px;
 }
 
@@ -68,31 +72,33 @@ body {
     margin-top: 150px;
 }
 
-.sidebar {
+.blogs_area .sidebar {
     width: 350px;
-    height: 250px;
+    height: 210px;
     margin: 0px 150px;
     margin-right: 0px;
     background-color: #000000;
     border-radius: 10px;
-    padding-top: 30px;
+    padding: 50px;
 }
 
 
-.sidebar button {
+.blogs_area .sidebar a {
     text-decoration: none;
+    color: #000000;
     background-color: #ffffff;
     display: block;
     border-radius: 10px;
+    text-align: center;
     padding: 16px 25px;
     font-family: 'HelveticaNeue';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     width: 70%;
-    margin-left: 52px;
-    margin-top: 15px;
+    margin-bottom: 20px;
     border: none;
+    width: 200px;
 }
 
 
@@ -105,6 +111,7 @@ body {
 .blogss {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-right: 150px;
 }
 
 .blogss .blog_item {
@@ -139,6 +146,21 @@ body {
     font-size: 18px;
 }
 
+.view_btn {
+    visibility: hidden;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#view_all {
+
+    text-decoration: none;
+    color: #FFFFFF;
+
+    background-color: #DD0000;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
 
 /* --------------------
     blogs area end  
@@ -151,8 +173,7 @@ footer {
 }
 
 .goal {
-    /* margin-left: 100px; */
-    /* width: 70%; */
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -168,9 +189,10 @@ footer {
 }
 
 .footer_content {
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 20vw;
+    margin-right: 20vw;
     display: flex;
+    align-items: center;
     color: rgb(177, 175, 175);
 }
 
@@ -181,6 +203,79 @@ footer {
 
 }
 
+
 /* --------------------
     footer area end  
 ----------------------*/
+/* ---------------------------
+    Media Queries Tablet  
+--------------------------*/
+@media screen and (max-width: 1500px) {
+    .header_area {
+        margin: 50px 50px;
+    }
+
+    .header_area img {
+        width: 80%;
+        margin-top: 100px;
+    }
+
+    .blogss {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* .footer_content {
+        margin-left: 20vw;
+        margin-right: 20vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    } */
+
+}
+
+@media screen and (max-width: 1026px) {
+
+    .header_area img {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .blogs_area {
+        display: inline-block;
+    }
+
+    .blogs_area .sidebar {
+        visibility: hidden;
+        display: flex;
+        width: 700px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .blogs_area .sidebar a {
+        margin: 10px;
+        height: 30px;
+        text-align: center;
+        visibility: visible;
+        border: 1px solid black;
+    }
+
+    .view_btn {
+        visibility: visible;
+    }
+
+    .blogss {
+        margin-top: 30px;
+        margin-left: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer_content {
+        padding-left: 10px;
+        color: rgb(177, 175, 175);
+        text-align: center;
+    }
+
+}
