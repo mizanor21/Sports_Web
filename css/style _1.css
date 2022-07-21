@@ -333,6 +333,26 @@ footer {
     Media Queries Mobile view  
 -------------------------------*/
 @media screen and (max-width: 767px) {
+    @keyframes example {
+        0% {
+            background-color: red;
+            left: 50px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            left: -50px;
+            top: 0px;
+        }
+
+        100% {
+            background-color: red;
+            left: 50px;
+            top: 0px;
+        }
+    }
+
     .header_area {
         width: 90%;
         text-align: center;
