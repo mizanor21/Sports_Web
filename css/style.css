@@ -34,7 +34,7 @@ body {
 
 
 .header_area .header_content h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -69,7 +69,7 @@ body {
     display: flex;
     margin-left: 0px;
     margin-right: 150px;
-    margin-bottom: 140px;
+    margin-bottom: 60px;
     margin-top: 150px;
 }
 
@@ -163,14 +163,13 @@ body {
     border-radius: 10px;
 }
 
-/* --------------------
-    blogs area end  
-----------------------*/
+
 /* --------------------
     footer area start  
 ----------------------*/
 footer {
     background-color: #000000;
+    height: 500px;
 }
 
 .goal {
@@ -192,16 +191,32 @@ footer {
     margin-right: 20vw;
     display: flex;
     align-items: center;
-    color: rgb(177, 175, 175);
+    color: rgb(218, 215, 215);
 }
 
 .footer_content p {
     font-size: 18px;
     padding: 2vw;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 
 }
 
+.social_icon {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social_icon a {
+    margin-bottom: 30px;
+    font-size: x-large;
+    padding: 0 10px;
+    color: grey;
+    text-decoration: none;
+}
+
+.social_icon a:hover {
+    color: #FFFFFF;
+}
 
 /* --------------------
     footer area end  
@@ -353,6 +368,19 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .blogss .blog_item {
+        width: 320px;
+        height: 350px;
+    }
+
+    .blogss .blog_item img {
+        width: 320px;
+    }
+
+    footer {
+        height: 700px;
+    }
+
     .goal {
         font-size: x-large;
     }
@@ -360,10 +388,11 @@ footer {
     .footer_content {
         display: block;
         text-align: center;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
 
     .footer_content p {
+        color: rgb(210, 210, 214);
         padding-bottom: 0px;
     }
 }
